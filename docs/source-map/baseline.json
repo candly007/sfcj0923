@@ -1,0 +1,23 @@
+{
+  "workspace": "C:\\Users\\Administrator\\Downloads\\shunfeng",
+  "production": {
+    "pluginCore": "plugin-source/v10-source-restoration",
+    "pluginModel": "plugin-source/v10-source-restoration-lk",
+    "admin": "admin-source/current"
+  },
+  "referenceOnly": [
+    "plugin-source/current-v11-timed-dungeon",
+    "plugin-source/current-v3-runtime",
+    "plugin-source/previous-v2"
+  ],
+  "indexes": "docs/source-map/generated",
+  "queryScript": "scripts/find-source-api.ps1",
+  "regenerateScript": "scripts/generate-source-map.ps1",
+  "verificationScript": "scripts/verify-v10-source-restoration.ps1",
+  "rules": [
+    "Query the generated indexes before reading source files.",
+    "Analyze only the matched call chain and direct dependencies.",
+    "Never publish from a referenceOnly directory.",
+    "Regenerate indexes and run verification after source changes."
+  ]
+}

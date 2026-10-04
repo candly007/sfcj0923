@@ -1,0 +1,23 @@
+[Unit]
+Description=Shunfeng License Gateway
+After=network-online.target shunfeng-license-core.service
+Wants=network-online.target
+Requires=shunfeng-license-core.service
+
+[Service]
+Type=simple
+User=shunfeng
+Group=shunfeng
+WorkingDirectory=/opt/shunfeng-license
+EnvironmentFile=/etc/shunfeng-license.env
+ExecStart=/usr/bin/python3 /opt/shunfeng-license/license_gateway.py
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/shunfeng-license
+
+[Install]
+WantedBy=multi-user.target

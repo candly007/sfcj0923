@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup Condition="'$(ExternalBuildRoot)' != ''">
+    <BaseIntermediateOutputPath>$(ExternalBuildRoot)\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(BaseIntermediateOutputPath)</MSBuildProjectExtensionsPath>
+    <BaseOutputPath>$(ExternalBuildRoot)\bin\$(MSBuildProjectName)\</BaseOutputPath>
+  </PropertyGroup>
+</Project>

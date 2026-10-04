@@ -1,0 +1,118 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>顺风插件管理后台</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net6.0-windows</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Latest</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+    <DefaultExcludesInProjectFolder>$(DefaultExcludesInProjectFolder);obj\**;bin\**</DefaultExcludesInProjectFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="NetClientFrom.Resources.basic.o" />
+    <None Remove="NetClientFrom.Resources.cross_server.shidao_dahui.o" />
+    <None Remove="NetClientFrom.Resources.dishaxing_template.o" />
+    <None Remove="NetClientFrom.Resources.double_magic_hit.o" />
+    <None Remove="NetClientFrom.Resources.family_task.o" />
+    <None Remove="NetClientFrom.Resources.gaitouhuanmianka.o" />
+    <None Remove="NetClientFrom.Resources.heartbeatd.o" />
+    <None Remove="NetClientFrom.Resources.jiji-rulvling.o" />
+    <None Remove="NetClientFrom.Resources.laojun_chagang.o" />
+    <None Remove="NetClientFrom.Resources.laojun_chengfa.o" />
+    <None Remove="NetClientFrom.Resources.logind.o" />
+    <None Remove="NetClientFrom.Resources.magic_double_hit.o" />
+    <None Remove="NetClientFrom.Resources.magic_towerd.o" />
+    <None Remove="NetClientFrom.Resources.menpaibiwu_dahui.o" />
+    <None Remove="NetClientFrom.Resources.multi_physical_attack.o" />
+    <None Remove="NetClientFrom.Resources.recognized.o" />
+    <None Remove="NetClientFrom.Resources.rune_inlayd.o" />
+    <None Remove="NetClientFrom.Resources.script_apprentice_earth.o" />
+    <None Remove="NetClientFrom.Resources.script_apprentice_fire.o" />
+    <None Remove="NetClientFrom.Resources.script_apprentice_metal.o" />
+    <None Remove="NetClientFrom.Resources.script_apprentice_water.o" />
+    <None Remove="NetClientFrom.Resources.script_apprentice_wood.o" />
+    <None Remove="NetClientFrom.Resources.script_fengyin-dejie.o" />
+    <None Remove="NetClientFrom.Resources.script_xiufa-lianbao.o" />
+    <None Remove="NetClientFrom.Resources.shangguyaowang_template.o" />
+    <None Remove="NetClientFrom.Resources.shidao-dahui.o" />
+    <None Remove="NetClientFrom.Resources.stalld.o" />
+    <None Remove="NetClientFrom.Resources.tasks.tongtianta.o" />
+    <None Remove="NetClientFrom.Resources.time_luckd.o" />
+    <None Remove="NetClientFrom.Resources.topd.o" />
+    <None Remove="NetClientFrom.Resources.userd.o" />
+    <None Remove="NetClientFrom.Resources.wizardd.o" />
+    <None Remove="NetClientFrom.Resources.wuzhuangyuan.o" />
+    <None Remove="NetClientFrom.Resources.xianjie_tongji.o" />
+    <None Remove="NetClientFrom.Resources.grant.list" />
+    <None Remove="NetClientFrom.图片资源.falselook.png" />
+    <None Remove="NetClientFrom.图片资源.truelook.png" />
+    <EmbeddedResource Include="NetClientFrom.Resources.basic.o" LogicalName="NetClientFrom.Resources.basic.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.cross_server.shidao_dahui.o" LogicalName="NetClientFrom.Resources.cross_server.shidao_dahui.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.dishaxing_template.o" LogicalName="NetClientFrom.Resources.dishaxing_template.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.double_magic_hit.o" LogicalName="NetClientFrom.Resources.double_magic_hit.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.family_task.o" LogicalName="NetClientFrom.Resources.family_task.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.gaitouhuanmianka.o" LogicalName="NetClientFrom.Resources.gaitouhuanmianka.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.heartbeatd.o" LogicalName="NetClientFrom.Resources.heartbeatd.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.jiji-rulvling.o" LogicalName="NetClientFrom.Resources.jiji-rulvling.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.laojun_chagang.o" LogicalName="NetClientFrom.Resources.laojun_chagang.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.laojun_chengfa.o" LogicalName="NetClientFrom.Resources.laojun_chengfa.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.logind.o" LogicalName="NetClientFrom.Resources.logind.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.magic_double_hit.o" LogicalName="NetClientFrom.Resources.magic_double_hit.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.magic_towerd.o" LogicalName="NetClientFrom.Resources.magic_towerd.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.menpaibiwu_dahui.o" LogicalName="NetClientFrom.Resources.menpaibiwu_dahui.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.multi_physical_attack.o" LogicalName="NetClientFrom.Resources.multi_physical_attack.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.recognized.o" LogicalName="NetClientFrom.Resources.recognized.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.rune_inlayd.o" LogicalName="NetClientFrom.Resources.rune_inlayd.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.script_apprentice_earth.o" LogicalName="NetClientFrom.Resources.script_apprentice_earth.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.script_apprentice_fire.o" LogicalName="NetClientFrom.Resources.script_apprentice_fire.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.script_apprentice_metal.o" LogicalName="NetClientFrom.Resources.script_apprentice_metal.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.script_apprentice_water.o" LogicalName="NetClientFrom.Resources.script_apprentice_water.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.script_apprentice_wood.o" LogicalName="NetClientFrom.Resources.script_apprentice_wood.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.script_fengyin-dejie.o" LogicalName="NetClientFrom.Resources.script_fengyin-dejie.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.script_xiufa-lianbao.o" LogicalName="NetClientFrom.Resources.script_xiufa-lianbao.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.shangguyaowang_template.o" LogicalName="NetClientFrom.Resources.shangguyaowang_template.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.shidao-dahui.o" LogicalName="NetClientFrom.Resources.shidao-dahui.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.stalld.o" LogicalName="NetClientFrom.Resources.stalld.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.tasks.tongtianta.o" LogicalName="NetClientFrom.Resources.tasks.tongtianta.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.time_luckd.o" LogicalName="NetClientFrom.Resources.time_luckd.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.topd.o" LogicalName="NetClientFrom.Resources.topd.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.userd.o" LogicalName="NetClientFrom.Resources.userd.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.wizardd.o" LogicalName="NetClientFrom.Resources.wizardd.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.wuzhuangyuan.o" LogicalName="NetClientFrom.Resources.wuzhuangyuan.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.xianjie_tongji.o" LogicalName="NetClientFrom.Resources.xianjie_tongji.o" />
+    <EmbeddedResource Include="NetClientFrom.Resources.grant.list" LogicalName="NetClientFrom.Resources.grant.list" />
+    <EmbeddedResource Include="NetClientFrom.图片资源.falselook.png" LogicalName="NetClientFrom.图片资源.falselook.png" />
+    <EmbeddedResource Include="NetClientFrom.图片资源.truelook.png" LogicalName="NetClientFrom.图片资源.truelook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GameDesignerCore">
+      <HintPath>..\shared\GameDesignerCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\third-party\plugin\UnityEngine.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <ProjectReference Include="..\..\plugin-source\v10-source-restoration-lk\ServerCoreLK.csproj" />
+    <Reference Include="System.Management">
+      <HintPath>..\shared\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\shared\UniTask.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Target Name="CopyPublishedAdminToArtifactDirectory" AfterTargets="Publish" Condition="Exists('$(PublishDir)$(AssemblyName).exe')">
+    <PropertyGroup>
+      <AdminArtifactDirectory>$(MSBuildThisFileDirectory)..\..\artifacts\admin-current</AdminArtifactDirectory>
+    </PropertyGroup>
+    <MakeDir Directories="$(AdminArtifactDirectory)" />
+    <Copy SourceFiles="$(PublishDir)$(AssemblyName).exe" DestinationFolder="$(AdminArtifactDirectory)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

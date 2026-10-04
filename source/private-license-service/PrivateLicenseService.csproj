@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <OutputType>Exe</OutputType>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableDefaultContentItems>false</EnableDefaultContentItems>
+    <DefaultExcludesInProjectFolder>$(DefaultExcludesInProjectFolder);obj\**;bin\**</DefaultExcludesInProjectFolder>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+</Project>

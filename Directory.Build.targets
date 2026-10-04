@@ -1,0 +1,23 @@
+<Project>
+  <Target Name="InjectProtectedPluginAssemblies"
+          DependsOnTargets="ComputeResolvedFilesToPublishList"
+          BeforeTargets="_ComputeFilesToBundle"
+          Condition="'$(ProtectedServerCoreDll)' != '' and Exists('$(ProtectedServerCoreDll)')">
+    <ItemGroup>
+      <_ProtectedPluginCore Include="@(ResolvedFileToPublish)" Condition="'%(Filename)%(Extension)' == 'ServerCore.dll'" />
+      <_ProtectedPluginShared Include="@(ResolvedFileToPublish)" Condition="'%(Filename)%(Extension)' == 'ServerCoreLK.dll'" />
+    </ItemGroup>
+    <Copy SourceFiles="$(ProtectedServerCoreDll)" DestinationFiles="@(_ProtectedPluginCore)" SkipUnchangedFiles="false" />
+    <Copy SourceFiles="$(ProtectedServerCoreLKDll)" DestinationFiles="@(_ProtectedPluginShared)" SkipUnchangedFiles="false" Condition="'$(ProtectedServerCoreLKDll)' != '' and Exists('$(ProtectedServerCoreLKDll)')" />
+  </Target>
+
+  <Target Name="InjectProtectedAdminAssembly"
+          DependsOnTargets="ComputeResolvedFilesToPublishList"
+          BeforeTargets="_ComputeFilesToBundle"
+          Condition="'$(ProtectedAdminDll)' != '' and Exists('$(ProtectedAdminDll)')">
+    <ItemGroup>
+      <_ProtectedAdmin Include="@(ResolvedFileToPublish)" Condition="'%(Filename)%(Extension)' == '$(AssemblyName).dll'" />
+    </ItemGroup>
+    <Copy SourceFiles="$(ProtectedAdminDll)" DestinationFiles="@(_ProtectedAdmin)" SkipUnchangedFiles="false" />
+  </Target>
+</Project>

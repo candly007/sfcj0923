@@ -1,0 +1,22 @@
+[Unit]
+Description=Shunfeng License Core Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=shunfeng
+Group=shunfeng
+WorkingDirectory=/opt/shunfeng-license
+EnvironmentFile=/etc/shunfeng-license.env
+ExecStart=/opt/shunfeng-license/LicenseService --urls http://127.0.0.1:5181
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/shunfeng-license
+
+[Install]
+WantedBy=multi-user.target

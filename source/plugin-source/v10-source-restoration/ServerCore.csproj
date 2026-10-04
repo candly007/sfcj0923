@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ServerCore</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+    <DefaultExcludesInProjectFolder>$(DefaultExcludesInProjectFolder);obj\**;bin\**</DefaultExcludesInProjectFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="timed-dungeon.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\v10-source-restoration-lk\ServerCoreLK.csproj" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="8.0.1" />
+    <PackageReference Include="System.Security.Permissions" Version="8.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+    <Reference Include="GameDesignerCore"><HintPath>..\\..\\..\\third-party\\plugin\\GameDesignerCore.dll</HintPath></Reference>
+    <Reference Include="RecastNet"><HintPath>..\\..\\..\\third-party\\plugin\\RecastNet.dll</HintPath></Reference>
+    <Reference Include="UnityEngine"><HintPath>..\\..\\..\\third-party\\plugin\\UnityEngine.dll</HintPath></Reference>
+    <Reference Include="TouchSocket"><HintPath>..\\..\\..\\third-party\\plugin\\TouchSocket.dll</HintPath></Reference>
+    <Reference Include="TouchSocket.Core"><HintPath>..\\..\\..\\third-party\\plugin\\TouchSocket.Core.dll</HintPath></Reference>
+    <Reference Include="Serilog"><HintPath>..\\..\\..\\third-party\\plugin\\Serilog.dll</HintPath></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>..\\..\\..\\third-party\\plugin\\Newtonsoft.Json.dll</HintPath></Reference>
+    <Reference Include="UniTask"><HintPath>..\\..\\..\\third-party\\plugin\\UniTask.dll</HintPath></Reference>
+    <Reference Include="MySql.Data"><HintPath>..\\..\\..\\third-party\\plugin\\MySql.Data.dll</HintPath></Reference>
+    <Reference Include="TouchSocket.Rpc"><HintPath>..\\..\\..\\third-party\\plugin\\TouchSocket.Rpc.dll</HintPath></Reference>
+    <Reference Include="Serilog.Sinks.Console"><HintPath>..\\..\\..\\third-party\\plugin\\Serilog.Sinks.Console.dll</HintPath></Reference>
+    <Reference Include="Serilog.Sinks.Async"><HintPath>..\\..\\..\\third-party\\plugin\\Serilog.Sinks.Async.dll</HintPath></Reference>
+    <Reference Include="Serilog.Sinks.File"><HintPath>..\\..\\..\\third-party\\plugin\\Serilog.Sinks.File.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

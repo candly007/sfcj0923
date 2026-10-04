@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-08-29T19:23:16.8405636+08:00",
+  "root": "C:\\Users\\Administrator\\Downloads\\shunfeng",
+  "projects": [
+    {
+      "Name": "plugin-core",
+      "root": "plugin-source/v10-source-restoration",
+      "files": 187,
+      "lines": 105654,
+      "types": 397,
+      "symbols": 4088
+    },
+    {
+      "Name": "plugin-model",
+      "root": "plugin-source/v10-source-restoration-lk",
+      "files": 178,
+      "lines": 12266,
+      "types": 232,
+      "symbols": 2152
+    },
+    {
+      "Name": "admin",
+      "root": "admin-source/current",
+      "files": 91,
+      "lines": 67450,
+      "types": 92,
+      "symbols": 5924
+    }
+  ],
+  "totals": {
+    "files": 456,
+    "lines": 185370,
+    "types": 721,
+    "symbols": 12164,
+    "enumMembers": 1507,
+    "constants": 209,
+    "rpcMethods": 79,
+    "rpcCalls": 229,
+    "switchDispatches": 1752,
+    "configFields": 3140,
+    "eventHandlers": 433,
+    "sqlLiterals": 136,
+    "databaseCalls": 354,
+    "networkEndpoints": 64
+  }
+}

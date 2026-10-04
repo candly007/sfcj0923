@@ -1,0 +1,10 @@
+﻿第三方引用库（用于源码编译，不含授权数据）：
+GameDesignerCore.dll
+RecastNet.dll
+UnityEngine.dll
+TouchSocket.dll / TouchSocket.Core.dll / TouchSocket.Rpc.dll
+Serilog.dll / Serilog.Sinks.Console.dll / Serilog.Sinks.Async.dll / Serilog.Sinks.File.dll
+Newtonsoft.Json.dll
+UniTask.dll
+MySql.Data.dll
+System.Management.dll
